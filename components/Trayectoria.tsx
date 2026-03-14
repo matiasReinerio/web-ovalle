@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Trayectoria() {
   return (
-    <section id="trayectoria" className="py-20 bg-slate-50/50 dark:bg-slate-900/50 border-y border-slate-200/50 dark:border-white/5 backdrop-blur-sm overflow-hidden">
+    <section id="trayectoria" className="py-20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}

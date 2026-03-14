@@ -63,7 +63,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="projects" className="py-20 bg-slate-50/50 dark:bg-slate-900/50 border-t border-slate-200/50 dark:border-white/5 backdrop-blur-sm relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <motion.div

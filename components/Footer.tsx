@@ -16,9 +16,9 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-slate-900 text-slate-300 py-16 border-t border-white/10">
+    <footer className="bg-slate-900 text-slate-300 py-10 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -61,8 +61,8 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Enlaces Rápidos</h4>
-            <ul className="space-y-4">
+            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Enlaces Rápidos</h4>
+            <ul className="space-y-2">
               {["Inicio", "Servicios", "Trayectoria", "Proyectos", "Contacto"].map((link) => (
                 <li key={link}>
                   <a
@@ -83,8 +83,8 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Servicios</h4>
-            <ul className="space-y-4">
+            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Servicios</h4>
+            <ul className="space-y-2">
               {[
                 "Detección y control de incendio",
                 "Circuito cerrado de televisión",
@@ -112,8 +112,8 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h4 className="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Contacto</h4>
-            <ul className="space-y-4 text-sm text-slate-400">
+            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Contacto</h4>
+            <ul className="space-y-2 text-sm text-slate-400">
               <li className="flex items-center gap-2 group">
                 <span>Mariano Sánchez Fontecilla 538, Las Condes, Santiago</span>
                 <a 
@@ -155,7 +155,7 @@ export function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4"
+          className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <p className="text-sm text-slate-500">
             &copy; {currentYear} Empresas Ovalle. Todos los derechos reservados.
