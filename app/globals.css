@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F172A;
+  --color-accent: #2563EB;
+  --color-action: #F59E0B;
+  --color-bg-light: #F8FAFC;
+  --color-bg-dark: #020617;
+  
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-plus-jakarta-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  /* Carousel Animations */
+  --animate-carousel: carousel 50s linear infinite;
+  @keyframes carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+  }
+}
+
+@layer base {
+  :root {
+    --background: var(--color-bg-light);
+    --foreground: var(--color-primary);
+    --card: #ffffff;
+    --card-foreground: var(--color-primary);
+    --border: rgba(15, 23, 42, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+  }
+
+  .dark {
+    --background: var(--color-bg-dark);
+    --foreground: #F8FAFC;
+    --card: #0F172A;
+    --card-foreground: #F8FAFC;
+    --border: rgba(248, 250, 252, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(15, 23, 42, 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
