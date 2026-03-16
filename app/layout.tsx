@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans, Orbitron } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
@@ -13,14 +13,22 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   variable: '--font-plus-jakarta-sans',
 });
 
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  variable: '--font-orbitron',
+});
+
 export const metadata: Metadata = {
   title: 'Empresas Ovalle | 30 Años de Excelencia',
   description: 'Empresas Ovalle, compañía líder con 30 años de trayectoria.',
+  icons: {
+    icon: '/fire_icon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" suppressHydrationWarning className={`${inter.variable} ${plusJakartaSans.variable}`}>
+    <html lang="es" suppressHydrationWarning className={`${inter.variable} ${plusJakartaSans.variable} ${orbitron.variable}`}>
       <body className="font-sans antialiased relative min-h-screen overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark" disableTransitionOnChange>
           {/* Mesh Gradients Background */}

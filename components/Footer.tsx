@@ -28,15 +28,16 @@ export function Footer() {
             className="col-span-1 lg:col-span-1"
           >
             <div className="flex items-center gap-2 mb-6">
-              <div className="relative w-auto h-12">
-                <Image 
-                  src="/ovalle_logo.jpg" 
-                  alt="Empresas Ovalle Logo" 
-                  width={200}
-                  height={100}
-                  className="object-contain h-full w-auto rounded-md shadow-sm"
-                />
-              </div>
+              <Image 
+                src="/fire_icon.svg" 
+                alt="Fire Icon" 
+                width={28} 
+                height={28} 
+                className="w-7 h-7 object-contain"
+              />
+              <span className="text-2xl font-orbitron font-black tracking-widest text-white uppercase">
+                OVALLE
+              </span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
               38 años de excelencia y compromiso inquebrantable.

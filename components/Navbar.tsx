@@ -41,16 +41,16 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="flex items-center gap-2">
-              <div className="relative w-auto h-12">
-                <Image 
-                  src="/ovalle_logo.jpg" 
-                  alt="Empresas Ovalle Logo" 
-                  width={200}
-                  height={100}
-                  className="object-contain h-full w-auto rounded-md shadow-sm"
-                  priority
-                />
-              </div>
+              <Image 
+                src="/fire_icon.svg" 
+                alt="Fire Icon" 
+                width={32} 
+                height={32} 
+                className="w-8 h-8 object-contain"
+              />
+              <span className="text-2xl md:text-2xl font-orbitron font-black tracking-widest text-white uppercase">
+                OVALLE
+              </span>
             </a>
           </div>
 

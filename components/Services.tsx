@@ -74,7 +74,7 @@ const brands = [
   { name: "Paradox", description: "Intrusión y detección de incendio." },
   { name: "Bosch", description: "Sistemas de seguridad de alta tecnología." },
   { name: "DSC", description: "Líder mundial en seguridad electrónica." },
-  { name: "Aihpone", description: "Sistemas de comunicación de alta tecnología: citofonía y video portero." },
+  { name: "Aiphone", description: "Sistemas de comunicación de alta tecnología: citofonía y video portero." },
   { name: "Rosslare", description: "Tecnologías de control de acceso integradas." },
   { name: "Kantech", description: "Sistemas de control de acceso integrados." },
   { name: "HID", description: "Líderes en sistemas de control de acceso." },
