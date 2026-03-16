@@ -17,12 +17,12 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 export function Contact() {
-  const [copied, setCopied] = useState(false);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
 
-  const handleCopy = (text: string) => {
+  const handleCopy = (text: string, id: string) => {
     navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setCopiedId(id);
+    setTimeout(() => setCopiedId(null), 2000);
   };
 
   const {
@@ -76,11 +76,11 @@ export function Contact() {
                       <p className="text-slate-600 dark:text-slate-400">{item.content}</p>
                       {(item.id === "email" || item.id === "phone") && (
                         <button 
-                          onClick={() => handleCopy(item.content)}
+                          onClick={() => handleCopy(item.content, item.id)}
                           className="p-1.5 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-400 hover:text-accent transition-colors"
                           title={`Copiar ${item.title.toLowerCase()} al portapapeles`}
                         >
-                          {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4" />}
+                          {copiedId === item.id ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4" />}
                         </button>
                       )}
                       {item.id === "address" && (
